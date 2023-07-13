@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="fixed-top">
+    <div class="card text-bg-dark p-3" style="width: 17rem; height: 58.63rem;">
+        <div class="card-body">
+            <h1 class="card-title">Меню</h1>
+            <!--Боковое меню начало-->
+            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                <a class="btn btn-dark active" href="index.html" role="button">Главная</a>
+                <a class="btn btn-dark" href="category.html" role="button">Категории</a>
+                <a class="btn btn-dark" href="catalogue.html" role="button">Заказы</a>
+                <a class="btn btn-dark" href="contacts.html" role="button">Контакты</a>
+                <div class="fixed-bottom">
+
+                    <div class="sticky-sm-bottom">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Пользователь
+                            </button>
+                            <!--Выпадающее меню начало-->
+                            <ul class="dropdown-menu bg-secondary-subtle">
+                                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                                <li><a class="dropdown-item" href="#">Выход</a></li>
+                            </ul>
+                            <!--Выпадающее меню конец-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Боковое меню конец -->
+        </div>
+    </div>
+</div>
+
+
+
+<p class="fw-bold" style="font-size: 60px; position: relative; top: 90px; left: 900px;">Контакты</p>
+<p class="fw-bold" style="font-size: 30px; position: relative; top: 275px; left: 1000px;">Наши контакты</p>
+<div class="text bg-white text-black" style="width: 20rem; font-size: 20px; position: relative; top: 275px; left: 1000px;">
+  Information about contacts and some else.
+</div>
+<div class="container" style="position: relative; top: 150px; left: 200px;">
+    <form>
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="name"
+                   style="width: 300px; height: 50px;">
+        </div>
+
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Почта</label>
+            <input type="email" class="form-control" id="exampleInputEmail1"
+                   style="width: 300px; height: 50px;">
+        </div>
+
+
+        <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width: 300px; height: 50px;"></textarea>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Проверить меня</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
